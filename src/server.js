@@ -4,7 +4,7 @@ const randomEmoji = require('random-unicode-emoji');
 const app = express();
 
 app.get('/status', (req, res) => {
-    res.status(204).send();
+    res.status(204).send('ok');
 });
 
 app.get('/', (req, res) => {
