@@ -32,7 +32,7 @@ jobs:
       - name: Deploy
         run: |
           gcloud run deploy emojiapi \
-          --region europe-east1 \
+          --region us-east1 \
           --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/emojiapi \
           --platform managed \
           --allow-unauthenticated \
